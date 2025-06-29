@@ -1,0 +1,48 @@
+
+# Python
+*.pyc
+__pycache__/
+.Python
+env/
+venv/
+*.env
+.project
+.settings
+.vscode
+dist/
+build/
+develop-eggs/
+.installed.cfg
+*.egg-info/
+.tox/
+.coverage
+.coverage.*
+.cache
+.pytest_cache/
+.dvc/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Logs and temporary files
+*.log
+*.temp
+*.tmp
+cache.json
+failed.json
+failed_enrichment.json
+toxic.json
+safe.json
+website.html
+
+# OS generated files
+.DS_Store
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Virtual Environment
+/bin
+/include
+/lib
+/pyvenv.cfg
