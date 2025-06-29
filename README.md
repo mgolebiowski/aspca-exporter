@@ -2,6 +2,10 @@
 
 This project provides scripts to extract plant toxicity data from the ASPCA website, categorize it, and enrich the data with Polish common names using an AI model.
 
+## Cost of translating using LLM
+
+Translating names for 983 plants using DeepSeek API with current pricing (June 2025) cost less than 3 cents.
+
 ## Data Preparation
 
 Before running the scripts, you need to download the ASPCA plant list webpage:
@@ -9,7 +13,7 @@ Before running the scripts, you need to download the ASPCA plant list webpage:
 1.  Go to: `https://www.aspca.org/pet-care/animal-poison-control/cats-plant-list`
 2.  Save the entire webpage as `website.html` in the root directory of this project.
     *   In most browsers, you can do this by right-clicking on the page and selecting "Save as..." or by going to `File > Save Page As...`.
-3. Create .env file with DEEPSEEK_API_KEY and DEEPSEEK_API_BASE_URL values. You can also use any other model that exposes OpenAPI-like API.
+3. Create .env file with API_KEY and API_BASE_URL values. You can also use any model that exposes OpenAPI-like API.
 
 ## Setup and Usage
 

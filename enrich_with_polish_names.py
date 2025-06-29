@@ -13,12 +13,12 @@ load_dotenv()
 logging.basicConfig(filename='enrichment.log', level=logging.INFO, 
                     format='%(asctime)s - %(levelname)s - %(message)s')
 
-DEEPSEEK_API_KEY = os.getenv("DEEPSEEK_API_KEY")
-DEEPSEEK_API_BASE_URL = os.getenv("DEEPSEEK_API_BASE_URL")
+API_KEY = os.getenv("API_KEY")
+API_BASE_URL = os.getenv("API_BASE_URL")
 
 client = OpenAI(
-    api_key=DEEPSEEK_API_KEY,
-    base_url=DEEPSEEK_API_BASE_URL
+    api_key=API_KEY,
+    base_url=API_BASE_URL
 )
 
 CACHE_FILE = 'cache.json'
